@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Duan-JF/changgou.git" />
+      </set>
+    </option>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -464,7 +472,8 @@
       <workItem from="1624938537773" duration="6230000" />
       <workItem from="1625212420149" duration="1783000" />
       <workItem from="1625624973522" duration="18000" />
-      <workItem from="1626534870383" duration="5004000" />
+      <workItem from="1626534870383" duration="5748000" />
+      <workItem from="1626591867124" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="创建Changgou项目">
       <created>1626590681425</created>
@@ -473,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626590681425</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="创建Changgou项目">
+      <created>1626591243624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626591243624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,9 +498,36 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -523,14 +566,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="392" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.864@0.0.1536.864" timestamp="1618381090321" />
-    <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1626590648284">
+    <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1626591242179">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="165" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1626590648284" />
-    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1626590791166">
+    <state x="165" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1626591242179" />
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1626591815872">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1626590791166" />
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591815872" />
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1626591793335">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1626591793335" />
     <state width="1493" height="230" key="GridCell.Tab.0.bottom" timestamp="1618418193012">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -563,30 +610,46 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="230" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618418193013" />
-    <state x="249" y="7" key="SettingsEditor" timestamp="1618908421184">
+    <state x="249" y="7" key="SettingsEditor" timestamp="1626591729403">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1618908421184" />
-    <state x="360" y="165" key="Vcs.Push.Dialog.v2" timestamp="1626590877111">
+    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1626591729403" />
+    <state x="360" y="165" key="Vcs.Push.Dialog.v2" timestamp="1626591651094">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="360" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1626590877111" />
+    <state x="360" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1626591651093" />
     <state x="478" y="72" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1618193189155">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="478" y="72" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1618193189155" />
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1626591977135">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591977135" />
     <state x="449" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1625624981604">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="449" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1625624981604" />
-    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626591207518">
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626595854841">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1626591207518" />
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1626595854841" />
+    <state x="554" y="223" key="git4idea.merge.GitMergeDialog" timestamp="1626591884429">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="554" y="223" key="git4idea.merge.GitMergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591884429" />
+    <state x="476" y="223" key="git4idea.merge.GitPullDialog" timestamp="1626591335648">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="476" y="223" key="git4idea.merge.GitPullDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591335648" />
     <state x="589" y="296" key="git4idea.rebase.GitRebaseDialog" timestamp="1626590293714">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="589" y="296" key="git4idea.rebase.GitRebaseDialog/0.0.1536.864@0.0.1536.864" timestamp="1626590293714" />
+    <state x="570" y="332" key="git4idea.ui.GitStashDialog" timestamp="1626591937823">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="570" y="332" key="git4idea.ui.GitStashDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591937823" />
     <state x="356" y="130" key="new project wizard" timestamp="1618364380883">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
