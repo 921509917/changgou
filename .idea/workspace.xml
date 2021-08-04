@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/StatusCodeEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/config/MultiThreadingCreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/config/MultiThreadingCreateOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/ChineseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/ChineseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/FeignHeaderInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/FeignHeaderInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/StatusCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-file/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-file/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/handler/BaseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/handler/BaseExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-order/src/main/java/com/duan/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-order/src/main/java/com/duan/order/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SearchResultMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SearchResultMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +49,7 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -103,11 +113,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-user\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.duan.entity" />
+      <recent name="com.duan.pay.impl" />
+      <recent name="com.duan.user.service.impl" />
+      <recent name="com.duan.user.service" />
+      <recent name="com.duan.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-seckill\src\main\java\com\duan\seckill\pojo" />
@@ -120,15 +134,11 @@
       <recent name="com.duan.user.utils" />
       <recent name="com.duan.order.config" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.duan.entity" />
-      <recent name="com.duan.pay.impl" />
-      <recent name="com.duan.user.service.impl" />
-      <recent name="com.duan.user.service" />
-      <recent name="com.duan.service.impl" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-user\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaSpringBootApplication">
+  <component name="RunManager" selected="Spring Boot.ContentApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -477,7 +487,8 @@
       <workItem from="1626591867124" duration="3974000" />
       <workItem from="1626674744077" duration="485000" />
       <workItem from="1627975302544" duration="1223000" />
-      <workItem from="1627998994608" duration="1795000" />
+      <workItem from="1627998994608" duration="5593000" />
+      <workItem from="1630145191334" duration="5601000" />
     </task>
     <task id="LOCAL-00001" summary="创建Changgou项目">
       <created>1626590681425</created>
@@ -542,30 +553,50 @@
     <option name="LAST_COMMIT_MESSAGE" value="创建Changgou项目" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="91" key="#Project_Structure" timestamp="1626674833714">
+    <state x="361" y="91" key="#Project_Structure" timestamp="1630162106318">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="91" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1626674833714" />
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1624947187461">
+    <state x="361" y="91" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1630162106318" />
+    <state x="222" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630197626514">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1624947187461" />
+    <state x="222" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1630197626514" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1630165015053">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1630165015053" />
     <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1626591242179">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="165" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1626591242179" />
-    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1626591815872">
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1628040968789">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591815872" />
-    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1628040226707">
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1628040968789" />
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1630161369997">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1628040226707" />
-    <state x="249" y="7" key="SettingsEditor" timestamp="1627999845664">
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1630161369997" />
+    <state width="1491" height="153" key="GridCell.Tab.0.bottom" timestamp="1630197636652">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1627999845664" />
+    <state width="1491" height="153" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1630197636652" />
+    <state width="1491" height="153" key="GridCell.Tab.0.center" timestamp="1630197636652">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="153" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1630197636652" />
+    <state width="1491" height="153" key="GridCell.Tab.0.left" timestamp="1630197636651">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="153" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1630197636651" />
+    <state width="1491" height="153" key="GridCell.Tab.0.right" timestamp="1630197636652">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="153" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1630197636652" />
+    <state x="249" y="7" key="SettingsEditor" timestamp="1630161371821">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1630161371821" />
     <state x="360" y="165" key="Vcs.Push.Dialog.v2" timestamp="1626596226800">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -578,14 +609,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="449" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1625624981604" />
-    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628000187129">
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630199160302">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1628000187129" />
-    <state x="554" y="223" key="git4idea.merge.GitMergeDialog" timestamp="1626591884429">
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1630199160302" />
+    <state x="539" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1630164821646">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="554" y="223" key="git4idea.merge.GitMergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591884429" />
+    <state x="539" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1630164821646" />
+    <state width="528" height="378" key="documentation.popup.size" timestamp="1630161884891">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="528" height="378" key="documentation.popup.size/0.0.1536.864@0.0.1536.864" timestamp="1630161884891" />
+    <state x="554" y="223" key="git4idea.merge.GitMergeDialog" timestamp="1628040409290">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="554" y="223" key="git4idea.merge.GitMergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1628040409290" />
     <state x="476" y="223" key="git4idea.merge.GitPullDialog" timestamp="1626591335648">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -594,14 +633,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="589" y="296" key="git4idea.rebase.GitRebaseDialog/0.0.1536.864@0.0.1536.864" timestamp="1626590293714" />
-    <state x="570" y="332" key="git4idea.ui.GitStashDialog" timestamp="1626591937823">
+    <state x="570" y="332" key="git4idea.ui.GitStashDialog" timestamp="1628040434416">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="570" y="332" key="git4idea.ui.GitStashDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591937823" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1627999873066">
+    <state x="570" y="332" key="git4idea.ui.GitStashDialog/0.0.1536.864@0.0.1536.864" timestamp="1628040434416" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1630165122763">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1627999873066" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1630165122763" />
     <state x="598" y="223" key="svn.repositoryBrowser" timestamp="1626590795823">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

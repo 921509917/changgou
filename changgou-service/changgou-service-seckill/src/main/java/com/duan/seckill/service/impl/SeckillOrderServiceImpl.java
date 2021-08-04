@@ -14,7 +14,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -24,6 +23,7 @@ import java.util.List;
  * @Description:SeckillOrder业务层接口实现类
  * @Date 2019/6/14 0:16
  *****/
+
 @Service
 public class SeckillOrderServiceImpl implements SeckillOrderService {
 
@@ -43,6 +43,7 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
     public SeckillStatus queryStatus(String username) {
         return (SeckillStatus) redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).get(username);
     }
+
     @Override
     public void updatePayStatus(String username, String transactionId, String endTime) {
         //从Redis中将订单信息查询出来
@@ -55,27 +56,33 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
                 order.setTransactionId(transactionId);
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
                 order.setPayTime(simpleDateFormat.parse(endTime));
-                seckillOrderMapper.insertSelective(order);  //将订单信息存到mysql中
+                //将订单信息存到mysql中
+                seckillOrderMapper.insertSelective(order);
 
                 //删除redis中的订单信息
                 redisTemplate.boundHashOps(SystemConstants.SEC_KILL_ORDER_KEY).delete(username);
 
                 //删除用户的排队信息
-                redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_QUEUE_COUNT).delete(username);  //清除排队队列
-                redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(username);   //排队状态队列
+                //清除排队队列
+                redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_QUEUE_COUNT).delete(username);
+                //排队状态队列
+                redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(username);
             } catch (ParseException e) {
                 e.printStackTrace();
             }
         }
     }
+
     @Override
     public void deleteOrder(String username) {
         //删除Redis中的订单
         redisTemplate.boundHashOps(SystemConstants.SEC_KILL_ORDER_KEY).delete(username);
 
         //删除用户的排队信息
-        redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_QUEUE_COUNT).delete(username);  //清除排队队列
-        redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(username);   //排队状态队列
+        //清除排队队列
+        redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_QUEUE_COUNT).delete(username);
+        //排队状态队列
+        redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(username);
 
         //查询出秒杀的状态信息
         SeckillStatus seckillStatus = (SeckillStatus) redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY)
@@ -105,7 +112,8 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
     public boolean add(Long id, String time, String username) {
         // 记录用户的秒杀数量
         Long increment = redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_QUEUE_COUNT).increment(username, 1);
-        if (increment>1) {  //记录指定hashkey的增量，大于1说明排队次数超过1次，重复排队
+        //记录指定hashkey的增量，大于1说明排队次数超过1次，重复排队
+        if (increment>1) {
             throw new RuntimeException("重复排队");
         }
         SeckillStatus seckillStatus = new SeckillStatus(username, new Date(),1,id,time);

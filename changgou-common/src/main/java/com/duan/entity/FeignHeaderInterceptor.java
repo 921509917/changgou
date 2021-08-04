@@ -15,14 +15,17 @@ import java.util.Enumeration;
  * @Version 1.0
  */
 public class FeignHeaderInterceptor implements RequestInterceptor {
-
-    //Feign调用前调用
+    /**
+     * Feign调用前调用
+     * @param template
+     */
     @Override
     public void apply(RequestTemplate template) {
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         if (requestAttributes != null) {
             HttpServletRequest request = requestAttributes.getRequest();
-            Enumeration<String> headerNames = request.getHeaderNames();//所有请求头的名字集合
+            //所有请求头的名字集合
+            Enumeration<String> headerNames = request.getHeaderNames();
             if (headerNames != null) {
                 while (headerNames.hasMoreElements()) {
                     String headerName = headerNames.nextElement();

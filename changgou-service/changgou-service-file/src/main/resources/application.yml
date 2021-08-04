@@ -1,3 +1,5 @@
+server:
+  port: 18090
 spring:
   servlet:
     multipart:
@@ -5,8 +7,6 @@ spring:
       max-request-size: 10MB
   application:
     name: file
-server:
-  port: 18090
 eureka:
   client:
     service-url:

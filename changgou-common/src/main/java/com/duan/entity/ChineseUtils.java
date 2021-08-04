@@ -46,19 +46,19 @@ public class ChineseUtils {
     }
 
     public static String getRandomLengthChiness(int start, int end) {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         int length = new Random().nextInt(end + 1);
         if (length < start) {
-            str = getRandomLengthChiness(start, end);
+            str = new StringBuilder(getRandomLengthChiness(start, end));
         } else {
             for (int i = 0; i < length; i++) {
-                str = str + getChinese();
+                str.append(getChinese());
             }
         }
-        return str;
+        return str.toString();
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(ChineseUtils.getChinese());
         System.out.println(ChineseUtils.getFixedLengthChinese(20));
         System.out.println(ChineseUtils.getRandomLengthChiness(2, 5));

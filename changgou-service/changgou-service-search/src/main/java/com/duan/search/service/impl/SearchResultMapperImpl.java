@@ -21,11 +21,16 @@ import java.util.List;
  * @Version 1.0
  */
 public class SearchResultMapperImpl implements SearchResultMapper {
+
+    @Override
     public <T> AggregatedPage<T> mapResults(SearchResponse response, Class<T> clazz, Pageable pageable) {
         List<T> list = new ArrayList<>();
-        for (SearchHit hit : response.getHits()) {  //遍历所有数据
-            SkuInfo skuInfo = JSON.parseObject(hit.getSourceAsString(), SkuInfo.class);//非高亮数据
-            HighlightField highlightField = hit.getHighlightFields().get("name");      //高亮数据
+        //遍历所有数据
+        for (SearchHit hit : response.getHits()) {
+            //非高亮数据
+            SkuInfo skuInfo = JSON.parseObject(hit.getSourceAsString(), SkuInfo.class);
+            //高亮数据
+            HighlightField highlightField = hit.getHighlightFields().get("name");
             //将非高亮数据替换成高亮数据
             if (highlightField != null && highlightField.getFragments() != null) {
                 Text[] fragments = highlightField.getFragments();

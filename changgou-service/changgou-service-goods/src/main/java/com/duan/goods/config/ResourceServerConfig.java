@@ -22,9 +22,13 @@ import java.util.stream.Collectors;
  * @Date 2021/4/12 9:42
  * @Version 1.0
  */
+
+/**
+ * 激活方法上的PreAuthorize注解
+ */
+@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 @Configuration
 @EnableResourceServer
-@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)//激活方法上的PreAuthorize注解
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     private static final String PUBLIC_KEY = "public.key";//公钥

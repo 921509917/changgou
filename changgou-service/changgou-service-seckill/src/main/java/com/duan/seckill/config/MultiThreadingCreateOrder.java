@@ -54,8 +54,10 @@ public class MultiThreadingCreateOrder {
         Object o = redisTemplate.boundListOps(SystemConstants.SEC_KILL_GOODS_COUNT_LIST + seckillGoods.getId()).rightPop();
 
         if (o == null) {
-            redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_QUEUE_COUNT).delete(seckillStatus.getUsername());  //清除排队队列
-            redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(seckillStatus.getUsername());   //排队状态队列
+            //清除排队队列
+            redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_QUEUE_COUNT).delete(seckillStatus.getUsername());
+            //排队状态队列
+            redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(seckillStatus.getUsername());
             return;
         }
 
@@ -70,8 +72,8 @@ public class MultiThreadingCreateOrder {
         redisTemplate.boundHashOps(SystemConstants.SEC_KILL_ORDER_KEY).put(seckillStatus.getUsername(),seckillOrder);
 
         //减库存，如果库存没了就从redis中删除，并将库存数据写到MySQL中
-        //seckillGoods.setStockCount(seckillGoods.getStockCount()-1);
-        Long size = redisTemplate.boundListOps(SystemConstants.SEC_KILL_GOODS_COUNT_LIST + seckillGoods.getId()).size();//获取库存
+        //获取库存
+        Long size = redisTemplate.boundListOps(SystemConstants.SEC_KILL_GOODS_COUNT_LIST + seckillGoods.getId()).size();
         //if (seckillGoods.getStockCount() <= 0) {
         seckillGoods.setNum(size.intValue());
         // 如果redis中没有库存了 就会将队列信息进行删除，并且更新数据的库存信息
@@ -84,7 +86,7 @@ public class MultiThreadingCreateOrder {
              */
             seckillGoodsBoundHashOps.put(seckillStatus.getGoodsId(),seckillGoods);
         }
-        //下单成功，更改seckillstatus的状态，再存入redis中
+        //下单成功，更改seckillStatus的状态，再存入redis中
         seckillStatus.setOrderId(seckillOrder.getId());
         seckillStatus.setMoney(Float.valueOf(seckillGoods.getCostPrice()));
         seckillStatus.setStatus(2);

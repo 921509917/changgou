@@ -11,6 +11,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -37,13 +38,15 @@ public class SeckillGoodsPushTask {
         List<Date> dateMenu = DateUtil.getDateMenus();
 
         for (Date date : dateMenu) {
-            date.setYear(2021-1900);    //2019-6-1 为了方便测试
-            date.setMonth(3-1);
+            //2019-6-1 为了方便测试
+            date.setYear(2021-1900);
+            date.setMonth(Calendar.APRIL);
             date.setDate(1);
             String dateString = SystemConstants.SEC_KILL_GOODS_PREFIX +DateUtil.data2str(date,"yyyyMMddHH");
 
             BoundHashOperations boundHashOperations = redisTemplate.boundHashOps(dateString);
-            Set<Long> keys = boundHashOperations.keys();	//获取Redis中已有的商品的id集合
+            //获取Redis中已有的商品的id集合
+            Set<Long> keys = boundHashOperations.keys();
             List<SeckillGoods> seckillGoods;
             //将秒杀商品的信息从数据库中加载出来
             if (keys!=null && keys.size()>0) {
@@ -53,9 +56,11 @@ public class SeckillGoodsPushTask {
             }
             // 将商品添加到Redis中并且添加到Redis队列中
             for (SeckillGoods seckillGood : seckillGoods) {
-                boundHashOperations.put(seckillGood.getId(),seckillGood);   //把商品存入到redis
+                //把商品存入到redis
+                boundHashOperations.put(seckillGood.getId(),seckillGood);
+                //存到Redis队列
                 redisTemplate.boundListOps(SystemConstants.SEC_KILL_GOODS_COUNT_LIST + seckillGood.getId())
-                        .leftPushAll(getGoodsNumber(seckillGood.getNum()));	//存到Redis队列
+                        .leftPushAll(getGoodsNumber(seckillGood.getNum()));
             }
         }
     }

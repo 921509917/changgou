@@ -20,9 +20,11 @@ import org.springframework.context.annotation.Bean;
 @MapperScan(basePackages = {"com.duan.order.mapper"})
 @EnableFeignClients({"com.duan.goods.feign","com.duan.user.feign","com.duan.pay.feign"})
 public class OrderApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(OrderApplication.class);
     }
+
     @Bean
     public FeignHeaderInterceptor feignHeaderInterceptor() {
         return new FeignHeaderInterceptor();
