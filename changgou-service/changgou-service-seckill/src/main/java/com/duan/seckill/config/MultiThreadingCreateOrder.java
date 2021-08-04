@@ -34,8 +34,9 @@ public class MultiThreadingCreateOrder {
 
     /**
      * 异步抢单
+     * 声明该方法是个异步任务，另开一个线程去运行
      */
-    @Async  //声明该方法是个异步任务，另开一个线程去运行
+    @Async
     public void createOrder() {
         //从Redis队列中取出 秒杀的订单信息
         SeckillStatus seckillStatus = (SeckillStatus) redisTemplate.boundListOps(SystemConstants.SEC_KILL_USER_QUEUE_KEY).rightPop();
