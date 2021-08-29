@@ -17,15 +17,12 @@ import java.util.Map;
 
 /**
  * 描述
- *
- * @author www.itheima.com
  * @version 1.0
  * @package com.changgou.oauth.service.impl *
  * @since 1.0
  */
 @Service
 public class LoginServiceImpl implements LoginService {
-
 
     @Autowired
     private RestTemplate restTemplate;
@@ -39,7 +36,7 @@ public class LoginServiceImpl implements LoginService {
         //1.定义url (申请令牌的url)
         //参数 : 微服务的名称spring.appplication指定的名称
         ServiceInstance choose = loadBalancerClient.choose("user-auth");
-        String url =choose.getUri().toString()+"/oauth/token";
+        String url = choose.getUri().toString()+"/oauth/token";
 
         //2.定义头信息 (有client id 和client secr)
         MultiValueMap<String,String> headers = new LinkedMultiValueMap<>();
@@ -49,22 +46,20 @@ public class LoginServiceImpl implements LoginService {
         formData.add("grant_type",grandType);
         formData.add("username",username);
         formData.add("password",password);
-        //4.模拟浏览器 发送POST 请求 携带 头 和请求体 到认证服务器
 
-        /**
-         * 参数1  指定要发送的请求的url
-         * 参数2  指定要发送的请求的方法 PSOT
-         * 参数3 指定请求实体(包含头和请求体数据)
-         */
+        // 4.模拟浏览器 发送POST 请求 携带 头 和请求体 到认证服务器
+         // 参数1  指定要发送的请求的url
+         // 参数2  指定要发送的请求的方法 PSOT
+         // 参数3 指定请求实体(包含头和请求体数据)
         HttpEntity<MultiValueMap> requestentity = new HttpEntity<MultiValueMap>(formData,headers);
-
         ResponseEntity<Map> responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestentity, Map.class);
+
         //5.接收到返回的响应(就是:令牌的信息)
         Map body = responseEntity.getBody();
 
         //封装一次.
-
         AuthToken authToken = new AuthToken();
+
         //访问令牌(jwt)
         String accessToken = (String) body.get("access_token");
         //刷新令牌(jwt)
@@ -72,11 +67,9 @@ public class LoginServiceImpl implements LoginService {
         //jti，作为用户的身份标识
         String jwtToken= (String) body.get("jti");
 
-
         authToken.setJti(jwtToken);
         authToken.setAccessToken(accessToken);
         authToken.setRefreshToken(refreshToken);
-
 
         //6.返回
         return authToken;

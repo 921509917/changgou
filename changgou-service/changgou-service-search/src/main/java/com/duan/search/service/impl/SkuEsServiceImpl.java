@@ -50,6 +50,7 @@ public class SkuEsServiceImpl implements SkuEsService {
     // 导入数据时需要使用goods服务
     @Override
     public void importData() {
+        // 查询所有的商品
         List<Sku> skuList = skuFeign.findAll().getData();
         List<SkuInfo> skuInfos = JSON.parseArray(JSON.toJSONString(skuList), SkuInfo.class);
 
@@ -76,13 +77,15 @@ public class SkuEsServiceImpl implements SkuEsService {
 
             //条件筛选或者分组统计
             BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
-            if (!StringUtils.isEmpty(searchEntity.getCategory())) {     //分类过滤
+            //分类过滤
+            if (!StringUtils.isEmpty(searchEntity.getCategory())) {
                 boolQueryBuilder.filter(QueryBuilders.termQuery("categoryName", searchEntity.getCategory()));
             } else {
                 nativeSearchQueryBuilder.addAggregation(AggregationBuilders.terms
                         ("categories_grouping").field("categoryName").size(10000));
             }
-            if (!StringUtils.isEmpty(searchEntity.getBrand())) {    //品牌过滤
+            //品牌过滤
+            if (!StringUtils.isEmpty(searchEntity.getBrand())) {
                 boolQueryBuilder.filter(QueryBuilders.termQuery("brandName", searchEntity.getBrand()));
             } else {
                 nativeSearchQueryBuilder.addAggregation(AggregationBuilders.terms
@@ -90,7 +93,8 @@ public class SkuEsServiceImpl implements SkuEsService {
             }
             nativeSearchQueryBuilder.addAggregation(AggregationBuilders.terms
                     ("spec_grouping").field("spec.keyword").size(10000));
-            if (!StringUtils.isEmpty(searchEntity.getPrice())) {    //价格过滤
+            //价格过滤
+            if (!StringUtils.isEmpty(searchEntity.getPrice())) {
                 String[] price = searchEntity.getPrice().replace("元", "")
                         .replace("以上", "").split("-");
                 boolQueryBuilder.filter(QueryBuilders.rangeQuery("price").gte(Integer.parseInt(price[0])));
@@ -115,10 +119,10 @@ public class SkuEsServiceImpl implements SkuEsService {
                 nativeSearchQueryBuilder
                         .withSort(SortBuilders.fieldSort(sortField).order(SortOrder.valueOf(sortRule)));
             }
-
+            //这两行顺序不能颠倒
             nativeSearchQueryBuilder
                     .withQuery(QueryBuilders.queryStringQuery(searchEntity.getKeywords()).field("name"))
-                    .withFilter(boolQueryBuilder);  //这两行顺序不能颠倒
+                    .withFilter(boolQueryBuilder);
 
             AggregatedPage<SkuInfo> skuInfos = template
                     .queryForPage(nativeSearchQueryBuilder.build(), SkuInfo.class, new SearchResultMapperImpl());
@@ -144,7 +148,11 @@ public class SkuEsServiceImpl implements SkuEsService {
         return null;
     }
 
-    //将过滤搜索出来的StringTerms转换成List集合
+    /**
+     * 将过滤搜索出来的StringTerms转换成List集合
+     * @param stringTerms
+     * @return
+     */
     private List<String> buildGroupList(StringTerms stringTerms) {
         List<String> list = new ArrayList<>();
         if (stringTerms != null) {
@@ -173,5 +181,4 @@ public class SkuEsServiceImpl implements SkuEsService {
         }
         return specMap;
     }
-
 }

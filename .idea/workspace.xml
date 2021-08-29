@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/StatusCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/ChineseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/ChineseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/FeignHeaderInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/FeignHeaderInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/IdWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common/src/main/java/com/duan/entity/StatusCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-file/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-file/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/handler/BaseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-goods/src/main/java/com/duan/goods/handler/BaseExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-order/src/main/java/com/duan/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-order/src/main/java/com/duan/order/OrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SearchResultMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SearchResultMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-common-db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common-db/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service-api/changgou-service-search-api/src/main/java/com/duan/search/pojo/SearchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service-api/changgou-service-search-api/src/main/java/com/duan/search/pojo/SearchEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SkuEsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SkuEsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-user/src/main/java/com/duan/user/service/impl/OauthClientDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-user/src/main/java/com/duan/user/service/impl/OauthClientDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/controller/UserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/controller/UserLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/OauthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/OauthApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/CustomUserAuthenticationConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/CustomUserAuthenticationConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/UserLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/service/impl/LoginServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +79,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="E:/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="E:\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\setting-alibaba.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -138,13 +142,27 @@
       <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-user\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ContentApplication">
+  <component name="RunManager" selected="Application.LoginServiceImpl">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
       <method />
+    </configuration>
+    <configuration name="LoginServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.duan.oauth.service.impl.LoginServiceImpl" />
+      <module name="changgou-user-oauth" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.duan.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.duan.canal.listener.Test" />
@@ -405,7 +423,13 @@
       <item itemvalue="Spring Boot.SearchWebApplication" />
       <item itemvalue="Spring Boot.EurekaSpringBootApplication" />
       <item itemvalue="Spring Boot.SearchApplication" />
+      <item itemvalue="Application.LoginServiceImpl" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoginServiceImpl" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -488,7 +512,8 @@
       <workItem from="1626674744077" duration="485000" />
       <workItem from="1627975302544" duration="1223000" />
       <workItem from="1627998994608" duration="5593000" />
-      <workItem from="1630145191334" duration="5601000" />
+      <workItem from="1630145191334" duration="7336000" />
+      <workItem from="1630201132083" duration="4115000" />
     </task>
     <task id="LOCAL-00001" summary="创建Changgou项目">
       <created>1626590681425</created>
@@ -565,6 +590,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1630165015053" />
+    <state x="391" y="290" width="753" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1630199397037">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="391" y="290" width="753" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1630199397037" />
     <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1626591242179">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -573,30 +602,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1628040968789" />
-    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1630161369997">
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1630199351205">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1630161369997" />
-    <state width="1491" height="153" key="GridCell.Tab.0.bottom" timestamp="1630197636652">
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1630199351205" />
+    <state width="1491" height="153" key="GridCell.Tab.0.bottom" timestamp="1630206344173">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="153" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1630197636652" />
-    <state width="1491" height="153" key="GridCell.Tab.0.center" timestamp="1630197636652">
+    <state width="1491" height="153" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1630206344173" />
+    <state width="1491" height="153" key="GridCell.Tab.0.center" timestamp="1630206344173">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="153" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1630197636652" />
-    <state width="1491" height="153" key="GridCell.Tab.0.left" timestamp="1630197636651">
+    <state width="1491" height="153" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1630206344173" />
+    <state width="1491" height="153" key="GridCell.Tab.0.left" timestamp="1630206344173">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="153" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1630197636651" />
-    <state width="1491" height="153" key="GridCell.Tab.0.right" timestamp="1630197636652">
+    <state width="1491" height="153" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1630206344173" />
+    <state width="1491" height="153" key="GridCell.Tab.0.right" timestamp="1630206344173">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="153" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1630197636652" />
-    <state x="249" y="7" key="SettingsEditor" timestamp="1630161371821">
+    <state width="1491" height="153" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1630206344173" />
+    <state x="249" y="7" key="SettingsEditor" timestamp="1630199354999">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1630161371821" />
+    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1630199354999" />
     <state x="360" y="165" key="Vcs.Push.Dialog.v2" timestamp="1626596226800">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -605,14 +634,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.864@0.0.1536.864" timestamp="1626591977135" />
-    <state x="449" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1625624981604">
+    <state x="449" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1630201220252">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="449" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1625624981604" />
-    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630199160302">
+    <state x="449" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1630201220252" />
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630206515423">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1630199160302" />
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1630206515423" />
     <state x="539" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1630164821646">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
