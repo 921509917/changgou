@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-pay/src/main/java/com/duan/pay/service/WeixinPayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-pay/src/main/java/com/duan/pay/service/WeixinPayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-pay/src/main/java/com/duan/pay/service/impl/WeixinPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-pay/src/main/java/com/duan/pay/service/impl/WeixinPayServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -500,7 +500,7 @@
       <workItem from="1627975302544" duration="1223000" />
       <workItem from="1627998994608" duration="5593000" />
       <workItem from="1630145191334" duration="7336000" />
-      <workItem from="1630201132083" duration="6261000" />
+      <workItem from="1630201132083" duration="6733000" />
     </task>
     <task id="LOCAL-00001" summary="创建Changgou项目">
       <created>1626590681425</created>
@@ -516,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626591243624</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="规范代码编写">
+      <created>1630228722969</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630228722969</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +569,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建Changgou项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建Changgou项目" />
+    <MESSAGE value="规范代码编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="规范代码编写" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="91" key="#Project_Structure" timestamp="1630162106318">
@@ -581,10 +589,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="391" y="290" width="753" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1630199397037" />
-    <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1626591242179">
+    <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1630229114920">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="165" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1626591242179" />
+    <state x="165" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1630229114920" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1628040968789">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -613,10 +621,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1630199354999" />
-    <state x="360" y="165" key="Vcs.Push.Dialog.v2" timestamp="1626596226800">
+    <state x="360" y="0" key="Vcs.Push.Dialog.v2" timestamp="1630228798692">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="360" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1626596226800" />
+    <state x="360" y="0" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1630228798692" />
     <state x="93" y="93" width="1350" height="678" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1626591977135">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
