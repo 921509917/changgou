@@ -23,15 +23,24 @@ public class SeckillGoodsController {
     private SeckillGoodsService seckillGoodsService;
 
 
-    //根据时间段(2019090516) 查询该时间段的所有的秒杀的商品
+    /**
+     * 根据时间段(2019090516) 查询该时间段的所有的秒杀的商品
+      * @param time
+     * @return
+     */
     @GetMapping("/list")
     public Result<List<SeckillGoods>> list(@RequestParam("time") String time){
         List<SeckillGoods> list = seckillGoodsService.list(time);
         return new Result<>(true, StatusCode.OK,"查询成功",list);
     }
 
-    //   SeckillGoodsController
-    //根据时间段  和秒杀商品的ID 获取商品的数据
+    /**
+     * SeckillGoodsController
+     * 根据时间段  和秒杀商品的ID 获取商品的数据
+     * @param time
+     * @param id
+     * @return
+     */
     @GetMapping("/one")
     public Result<SeckillGoods> one(String time,Long id){
         SeckillGoods seckillGoods = seckillGoodsService.one(time, id);

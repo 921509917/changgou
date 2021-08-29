@@ -28,7 +28,8 @@ public class SeckillMessageListener {
         try {
             // 将消息转为Map集合
             Map<String, String> resultMap = JSONObject.parseObject(message,Map.class);
-            String returnCode = resultMap.get("return_code");   //状态码
+            //状态码
+            String returnCode = resultMap.get("return_code");
 
             if ("SUCCESS".equals(returnCode)) {
                 //业务结果

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-common-db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-common-db/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service-api/changgou-service-search-api/src/main/java/com/duan/search/pojo/SearchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service-api/changgou-service-search-api/src/main/java/com/duan/search/pojo/SearchEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SkuEsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/duan/search/service/impl/SkuEsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-user/src/main/java/com/duan/user/service/impl/OauthClientDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-user/src/main/java/com/duan/user/service/impl/OauthClientDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/controller/UserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/controller/UserLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/src/main/java/com/duan/oauth/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/OauthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/OauthApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/CustomUserAuthenticationConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/CustomUserAuthenticationConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-user-oauth/target/classes/com/duan/oauth/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -513,7 +500,7 @@
       <workItem from="1627975302544" duration="1223000" />
       <workItem from="1627998994608" duration="5593000" />
       <workItem from="1630145191334" duration="7336000" />
-      <workItem from="1630201132083" duration="4115000" />
+      <workItem from="1630201132083" duration="6261000" />
     </task>
     <task id="LOCAL-00001" summary="创建Changgou项目">
       <created>1626590681425</created>

@@ -1,6 +1,5 @@
 package com.duan.seckill.config;
 
-import com.duan.entity.IdWorker;
 import com.duan.seckill.mapper.SeckillGoodsMapper;
 import com.duan.entity.DateUtil;
 import com.duan.entity.SystemConstants;
