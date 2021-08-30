@@ -36,28 +36,19 @@ public class WeixinPayServiceImpl implements WeixinPayService {
      * @return
      */
     @Override
-    public Map<String,String> createNative(String out_trade_no, String total_fee){
+    public Map createNative(String out_trade_no, String total_fee){
         try {
             //1、封装参数
-            Map<String,String> param = new HashMap<>();
-            //应用ID
-            param.put("appid", appid);
-            //商户ID号
-            param.put("mch_id", partner);
-            //随机数
-            param.put("nonce_str", WXPayUtil.generateNonceStr());
-            //订单描述
-            param.put("body", "畅购");
-            //商户订单号
-            param.put("out_trade_no",out_trade_no);
-            //交易金额
-            param.put("total_fee", total_fee);
-            //终端IP
-            param.put("spbill_create_ip", "127.0.0.1");
-            //回调地址
-            param.put("notify_url", notifyurl);
-            //交易类型
-            param.put("trade_type", "NATIVE");
+            Map param = new HashMap();
+            param.put("appid", appid);                              //应用ID
+            param.put("mch_id", partner);                           //商户ID号
+            param.put("nonce_str", WXPayUtil.generateNonceStr());   //随机数
+            param.put("body", "畅购");                            	//订单描述
+            param.put("out_trade_no",out_trade_no);                 //商户订单号
+            param.put("total_fee", total_fee);                      //交易金额
+            param.put("spbill_create_ip", "127.0.0.1");           //终端IP
+            param.put("notify_url", notifyurl);                    //回调地址
+            param.put("trade_type", "NATIVE");                     //交易类型
 
             //2、将参数转成xml字符，并携带签名
             String paramXml = WXPayUtil.generateSignedXml(param, partnerkey);
@@ -87,18 +78,14 @@ public class WeixinPayServiceImpl implements WeixinPayService {
     }
 
     @Override
-    public Map<String,String> queryPayStatus(String out_trade_no) {
+    public Map queryPayStatus(String out_trade_no) {
         try {
             //1.封装参数
-            Map<String,String> param = new HashMap<>();
-            //应用ID
-            param.put("appid",appid);
-            //商户号
-            param.put("mch_id",partner);
-            //商户订单编号
-            param.put("out_trade_no",out_trade_no);
-            //随机字符
-            param.put("nonce_str",WXPayUtil.generateNonceStr());
+            Map param = new HashMap();
+            param.put("appid",appid);                            //应用ID
+            param.put("mch_id",partner);                         //商户号
+            param.put("out_trade_no",out_trade_no);              //商户订单编号
+            param.put("nonce_str",WXPayUtil.generateNonceStr()); //随机字符
 
             //2、将参数转成xml字符，并携带签名
             String paramXml = WXPayUtil.generateSignedXml(param,partnerkey);

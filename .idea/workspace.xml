@@ -1,10 +1,11 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="修复:添加订单时为用户添加积分功能">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +137,34 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
       <method />
+    </configuration>
+    <configuration name="LoginServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.duan.oauth.service.impl.LoginServiceImpl" />
+      <module name="changgou-user-oauth" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.duan.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.duan.canal.listener.Test" />
+      <module name="changgou-service-canal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.duan.canal.listener.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -467,6 +496,7 @@
       <workItem from="1630145191334" duration="7336000" />
       <workItem from="1630201132083" duration="9228000" />
       <workItem from="1630285446328" duration="11348000" />
+      <workItem from="1630201132083" duration="6261000" />
     </task>
     <task id="LOCAL-00001" summary="创建Changgou项目">
       <created>1626590681425</created>
@@ -511,6 +541,7 @@
       <updated>1630310102666</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,6 +591,7 @@
     <MESSAGE value="修改配置文件" />
     <MESSAGE value="修复:添加订单时为用户添加积分功能" />
     <option name="LAST_COMMIT_MESSAGE" value="修复:添加订单时为用户添加积分功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建Changgou项目" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="91" key="#Project_Structure" timestamp="1630162106318">
@@ -583,10 +615,13 @@
     </state>
     <state x="498" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1630307725215" />
     <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1630310223308">
+    <state x="165" y="24" key="CommitChangelistDialog2" timestamp="1626591242179">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="165" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1630310223308" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1630310044783">
+    <state x="165" y="24" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1626591242179" />
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1628040968789">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1630310044783" />
@@ -622,9 +657,11 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1630199354999" />
+    <state x="360" y="165" key="Vcs.Push.Dialog.v2" timestamp="1626596226800">
     <state x="360" y="0" key="Vcs.Push.Dialog.v2" timestamp="1630310111446">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="360" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1626596226800" />
     <state x="360" y="0" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1630310111446" />
     <state x="93" y="93" width="1350" height="678" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1626591977135">
       <screen x="0" y="0" width="1536" height="864" />
@@ -642,7 +679,7 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="539" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1630164821646" />
-    <state width="528" height="378" key="documentation.popup.size" timestamp="1630293156136">
+    <state width="528" height="378" key="documentation.popup.size" timestamp="1630161884891">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="528" height="378" key="documentation.popup.size/0.0.1536.864@0.0.1536.864" timestamp="1630293156136" />
