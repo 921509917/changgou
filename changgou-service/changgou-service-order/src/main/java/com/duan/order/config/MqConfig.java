@@ -24,19 +24,30 @@ public class MqConfig {
                 .build();
     }
 
-    //队列2
-    @Bean(name = "orderListenerQueue")  //名称不写默认就是方法名
+    /**
+     * 队列2
+     * 名称不写默认就是方法名
+     */
+    @Bean(name = "orderListenerQueue")
     public Queue orderListenerQueue() {
         return new Queue("orderListenerQueue",true);
     }
 
-    //创建交换机
+    /**
+     * 创建交换机
+     * @return
+     */
     @Bean
     public Exchange orderListenerExchange() {
         return new DirectExchange("orderListenerExchange");
     }
 
-    //队列queue2绑定exchange
+    /**
+     * 队列queue2绑定exchange
+     * @param orderListenerQueue
+     * @param orderListenerExchange
+     * @return
+     */
     @Bean
     public Binding orderListenerBinding(Queue orderListenerQueue,Exchange orderListenerExchange) {
         return BindingBuilder
