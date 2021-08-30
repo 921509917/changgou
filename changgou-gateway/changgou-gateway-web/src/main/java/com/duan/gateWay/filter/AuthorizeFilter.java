@@ -1,8 +1,10 @@
 package com.duan.gateWay.filter;
 
 import com.duan.entity.JwtUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
 import org.springframework.core.Ordered;
 import org.springframework.http.HttpCookie;
 import org.springframework.http.HttpStatus;
@@ -12,6 +14,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 /**
  * @ClassName AuthorizeFilter
@@ -64,7 +69,12 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
 
         return chain.filter(exchange);
     }
-    //判断指定的uri是否不需要token就可以访问，true表示不需要
+
+    /**
+     *  判断指定的uri是否不需要token就可以访问，true表示不需要
+     * @param uri
+     * @return
+     */
     public boolean needlessToken(String uri) {
         String[] uris = new String[]{
                 "/api/user/add",

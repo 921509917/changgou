@@ -18,17 +18,17 @@
         <module name="changgou-service-weixinpay-api" />
         <module name="changgou-search-web" />
         <module name="changgou-eureka" />
-        <module name="changgou-service-goods-api" />
         <module name="changgou-web-item" />
         <module name="changgou-common" />
-        <module name="changgou-service-search" />
+        <module name="changgou-gateway-web" />
+        <module name="changgou-service-seckill" />
         <module name="changgou-common-db" />
         <module name="changgou-service-content-api" />
         <module name="changgou-service-pay" />
         <module name="changgou-service-seckill-api" />
-        <module name="changgou-gateway-web" />
+        <module name="changgou-service-goods-api" />
         <module name="changgou-service-file" />
-        <module name="changgou-service-seckill" />
+        <module name="changgou-service-search" />
         <module name="changgou-service-goods" />
       </profile>
     </annotationProcessing>

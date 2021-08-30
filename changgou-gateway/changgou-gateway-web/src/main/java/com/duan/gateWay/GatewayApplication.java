@@ -23,7 +23,10 @@ public class GatewayApplication {
         SpringApplication.run(GatewayApplication.class);
     }
 
-    // 需要限流Key，用IP来当做限流的Key，限制某一个IP在一定的时间段的访问次数
+    /**
+     * 需要限流Key，用IP来当做限流的Key，限制某一个IP在一定的时间段的访问次数
+     * @return
+     */
     @Bean(name = "ipKeyResolver")
     public KeyResolver userKeyResolver() {
         return exchange -> {
