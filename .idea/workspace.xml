@@ -1,11 +1,17 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="修复:添加订单时为用户添加积分功能">
+    <list default="true" id="c7e7fbb1-2d7f-451c-a9d6-9ae52893a82e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/controller/SeckillGoodsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service/changgou-service-seckill/src/main/java/com/duan/seckill/listener/SeckillMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-gateway/changgou-gateway-web/src/main/java/com/duan/gateWay/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-gateway/changgou-gateway-web/src/main/java/com/duan/gateWay/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-gateway/changgou-gateway-web/src/main/java/com/duan/gateWay/filter/AuthorizeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-gateway/changgou-gateway-web/src/main/java/com/duan/gateWay/filter/AuthorizeFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,34 +22,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="changgou" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="package-info" />
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="Enum" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,80 +34,19 @@
       </set>
     </option>
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="E:\SpringBootWorkspace\changgou\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="E:/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="E:\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\setting-alibaba.xml" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="1.8" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1qTtWigclfnAY8DttWwBzPdr5zB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1xRZcrra8Cb06jE8LpuIscIQbgJ" />
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.duan.entity" />
-      <recent name="com.duan.pay.impl" />
-      <recent name="com.duan.user.service.impl" />
-      <recent name="com.duan.user.service" />
-      <recent name="com.duan.service.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-seckill\src\main\java\com\duan\seckill\pojo" />
-      <recent name="E:\SpringBootWorkspace\changgou\changgou-user-oauth\src\main\resources" />
-      <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-seckill\src\main\java\com\duan\seckill\controller" />
-      <recent name="E:\SpringBootWorkspace\changgou\changgou-service-api\changgou-service-seckill-api\src\main\java\com\duan\seckill\pojo" />
-      <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-seckill\src\main\java\com\duan\seckill\service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.duan.user.utils" />
-      <recent name="com.duan.order.config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\SpringBootWorkspace\changgou\changgou-service\changgou-service-user\src\main\resources" />
-    </key>
-  </component>
+  <component name="RunManager">
   <component name="RunManager" selected="Spring Boot.GoodsApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
@@ -297,120 +214,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="changgou-service-order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duan.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.duan.order.OrderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="changgou-service-pay" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duan.pay.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.duan.pay.PayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="changgou-service-search" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duan.goods.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.duan.search.SearchApplication" />
-      <option name="VM_PARAMETERS" value="-Xmx1024m" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="changgou-search-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duan.searchWeb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.duan.searchWeb.SearchWebApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeckillApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="changgou-service-seckill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duan.seckill.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.duan.seckill.SeckillApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="changgou-service-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duan.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.duan.user.UserApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.GoodsApplication" />
-      <item itemvalue="Spring Boot.ContentApplication" />
-      <item itemvalue="Spring Boot.FileApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.ItemApplication" />
-      <item itemvalue="Spring Boot.OauthApplication" />
-      <item itemvalue="Spring Boot.OrderApplication" />
-      <item itemvalue="Spring Boot.PayApplication" />
-      <item itemvalue="Spring Boot.SeckillApplication" />
-      <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="Spring Boot.CanalApplication" />
-      <item itemvalue="Spring Boot.SearchWebApplication" />
-      <item itemvalue="Spring Boot.EurekaSpringBootApplication" />
-      <item itemvalue="Spring Boot.SearchApplication" />
-    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -425,14 +228,16 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\lenovo\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="68b2091f-735a-4dbe-9044-2188fcf1eef9" name="Default Changelist" comment="" />
-      <created>1617115440664</created>
+      <changelist id="c7e7fbb1-2d7f-451c-a9d6-9ae52893a82e" name="Default Changelist" comment="" />
+      <created>1630319943925</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+      <updated>1630319943925</updated>
+      <workItem from="1630319946011" duration="526000" />
       <updated>1617115440664</updated>
       <workItem from="1617115443227" duration="5425000" />
       <workItem from="1617155694677" duration="8503000" />
@@ -550,36 +355,9 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -594,6 +372,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="创建Changgou项目" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="222" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630320081214">
     <state x="361" y="91" key="#Project_Structure" timestamp="1630162106318">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -636,14 +415,15 @@
     <state width="1491" height="153" key="GridCell.Tab.0.center" timestamp="1630249523490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="153" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1630249523490" />
-    <state width="1491" height="153" key="GridCell.Tab.0.left" timestamp="1630249523490">
+    <state x="222" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1630320081214" />
+    <state x="360" y="0" key="Vcs.Push.Dialog.v2" timestamp="1630320090917">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="153" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1630249523490" />
-    <state width="1491" height="153" key="GridCell.Tab.0.right" timestamp="1630249523490">
+    <state x="360" y="0" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1630320090917" />
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630320493664">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="561" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1630320493664" />
     <state width="1491" height="153" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1630249523490" />
     <state x="348" y="166" key="IDE.errors.dialog" timestamp="1630310129743">
       <screen x="0" y="0" width="1536" height="864" />
