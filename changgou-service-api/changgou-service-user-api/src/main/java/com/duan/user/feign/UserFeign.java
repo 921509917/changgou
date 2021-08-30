@@ -83,4 +83,10 @@ public interface UserFeign {
     @GetMapping
     Result<List<User>> findAll();
 
+    /**
+     * 为用户添加积分
+     * @param totalMoney
+     */
+    @GetMapping("/{totalMoney}")
+    void addPoints(@PathVariable int totalMoney);
 }

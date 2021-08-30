@@ -47,7 +47,8 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
             }
         }
         if(needlessToken(request.getURI().toString())){
-            return chain.filter(exchange); // 如果是不需要token的请求就通过
+            // 如果是不需要token的请求就通过
+            return chain.filter(exchange);
         }
         if (StringUtils.isEmpty(token)){
             response.setStatusCode(HttpStatus.UNAUTHORIZED);

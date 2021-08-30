@@ -63,4 +63,6 @@ public interface UserService {
      * @return
      */
     List<User> findAll();
+
+    User getCurrentUser();
 }

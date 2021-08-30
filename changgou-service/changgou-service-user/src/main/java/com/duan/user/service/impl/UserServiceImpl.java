@@ -20,6 +20,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+    private User currentUser;
 
     /**
      * User条件+分页查询
@@ -203,5 +204,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findAll() {
         return userMapper.selectAll();
+    }
+
+    @Override
+    public User getCurrentUser() {
+        return this.currentUser;
+    }
+    public void setCurrentUser(User currentUser) {
+        this.currentUser = currentUser;
     }
 }

@@ -151,4 +151,16 @@ public class UserController {
         List<User> list = userService.findAll();
         return new Result<List<User>>(true, StatusCode.OK,"查询成功",list) ;
     }
+
+    /***
+     * 根据ID查询User数据
+     * @param totalMoney
+     * @return
+     */
+    @GetMapping("/{totalMoney}")
+    public void addPoints(@PathVariable int totalMoney){
+        User currentUser = userService.getCurrentUser();
+        currentUser.setPoints(currentUser.getPoints()+totalMoney);
+        userService.update(currentUser);
+    }
 }
