@@ -66,7 +66,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();
         }
-
+        //通过过滤器
         return chain.filter(exchange);
     }
 
