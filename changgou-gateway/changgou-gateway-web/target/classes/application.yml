@@ -1,3 +1,5 @@
+server:
+  port: 8001
 spring:
   application:
     name: gateway-web
@@ -13,6 +15,7 @@ spring:
               - PUT
               - DELETE
       routes:
+        # 商品微服务路由
         - id: changgou_goods_route   # 唯一标识符
           uri: http://localhost:18081
           predicates:
@@ -27,6 +30,7 @@ spring:
                 redis-rate-limiter.replenishRate: 1
                 # 令牌桶的容量，允许在一秒钟内完成的最大请求数
                 redis-rate-limiter.burstCapacity: 1
+        # 用户微服务路由
         - id: changgou_user_route   # 唯一标识符
           uri: http://localhost:18088
           predicates:
@@ -44,8 +48,6 @@ spring:
   redis:
     host: 192.168.78.15
     port: 6379
-server:
-  port: 8001
 eureka:
   client:
     service-url:
