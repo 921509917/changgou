@@ -15,7 +15,6 @@ spring:
     allow-bean-definition-overriding: true
   rabbitmq:
     host: 192.168.78.15
-    port: 5672
     username: guest
     password: guest
 #位置支付交换机和队列
