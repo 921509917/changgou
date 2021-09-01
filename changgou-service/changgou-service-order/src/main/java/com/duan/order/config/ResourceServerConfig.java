@@ -28,7 +28,10 @@ import java.util.stream.Collectors;
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)//激活方法上的PreAuthorize注解
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
-    private static final String PUBLIC_KEY = "public.key";//公钥
+    /**
+     * 公钥
+     */
+    private static final String PUBLIC_KEY = "public.key";
 
     /***
      * 定义JwtTokenStore
