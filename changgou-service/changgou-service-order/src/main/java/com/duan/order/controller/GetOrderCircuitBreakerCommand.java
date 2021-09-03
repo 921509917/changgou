@@ -19,18 +19,26 @@ public class GetOrderCircuitBreakerCommand extends HystrixCommand<String> {
                         .andThreadPoolKey(HystrixThreadPoolKey.Factory.asKey(name))
                         .andCommandPropertiesDefaults(
                                 HystrixCommandProperties.Setter()
-                                        .withCircuitBreakerEnabled(true)//默认是true，本例中为了展现该参数
-                                        .withCircuitBreakerForceOpen(false)//默认是false，本例中为了展现该参数
-                                        .withCircuitBreakerForceClosed(false)//默认是false，本例中为了展现该参数
-                                        .withCircuitBreakerErrorThresholdPercentage(5)//(1)错误百分比超过5%
-                                        .withCircuitBreakerRequestVolumeThreshold(10)//(2)10s以内调用次数10次，同时满足(1)(2)熔断器打开
-                                        .withCircuitBreakerSleepWindowInMilliseconds(5000)//隔5s之后，熔断器会尝试半开(关闭)，重新放进来请求
+                                        //默认是true，本例中为了展现该参数
+                                        .withCircuitBreakerEnabled(true)
+                                        //默认是false，本例中为了展现该参数
+                                        .withCircuitBreakerForceOpen(false)
+                                        //默认是false，本例中为了展现该参数
+                                        .withCircuitBreakerForceClosed(false)
+                                        //(1)错误百分比超过5%
+                                        .withCircuitBreakerErrorThresholdPercentage(5)
+                                        //(2)10s以内调用次数10次，同时满足(1)(2)熔断器打开
+                                        .withCircuitBreakerRequestVolumeThreshold(10)
+                                        //隔5s之后，熔断器会尝试半开(关闭)，重新放进来请求
+                                        .withCircuitBreakerSleepWindowInMilliseconds(5000)
 //                                .withExecutionTimeoutInMilliseconds(1000)
                         )
                         .andThreadPoolPropertiesDefaults(
                                 HystrixThreadPoolProperties.Setter()
-                                        .withMaxQueueSize(10)   //配置队列大小
-                                        .withCoreSize(2)    // 配置线程池里的线程数
+                                        //配置队列大小
+                                        .withMaxQueueSize(10)
+                                        // 配置线程池里的线程数
+                                        .withCoreSize(2)
                         )
         );
     }
