@@ -17,6 +17,8 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -31,11 +33,25 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
     // 获取本地Token值 从Cookie中
     private static final String AUTHORIZE_TOKEN = "Authorization";
 
+    /**
+     *  客户端首次请求经过网关时进行请求过滤
+     *      1.通过请求头中获取登录之后的token值
+     *      2.若请求头中没有，就从参数中获取
+     *      3.判断请求路径，如果不需要过滤，则放行
+     *      4.若没成功放行，则进行响应码的设置
+     * @param exchange
+     * @param chain
+     * @return
+     */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
         boolean hasTokenInHeader = true;
+        // 如果是不需要token的请求就通过
+        if(needlessToken(request.getURI().toString())){
+            return chain.filter(exchange);
+        }
         String token;
         // 从请求头中获取token
         token = request.getHeaders().getFirst(AUTHORIZE_TOKEN);
@@ -51,10 +67,6 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
             if (cookie != null){
                 token = cookie.getValue();
             }
-        }
-        if(needlessToken(request.getURI().toString())){
-            // 如果是不需要token的请求就通过
-            return chain.filter(exchange);
         }
         if (StringUtils.isEmpty(token)){
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
